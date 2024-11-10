@@ -1,10 +1,3 @@
-/******************************************************************************
-*	Program Author: Kavita Mishra for CSCI 6810 Java and the Internet	  *
-*	Date: September, 2018													  *
-*******************************************************************************/
-
-package com.mishra;
-
 import java.lang.*; //including Java packages used by this program
 import java.sql.*;
 import com.mishra.*;
