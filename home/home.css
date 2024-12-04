@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(home.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.navbar {
+    display: flex;
+    padding: 2% 6%;
+    text-align: left;
+}
+.navbar a {
+    text-align: left;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar a:hover::after {
+    width: 100%;
+}
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: black 2px 2px solid;
+}
+.text-box h1 {
+    font-size: 80px;     
+    font-weight: 900;
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px; 
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+/* Footer Styles */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .bton {
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    width: 3%;
+    height: 10%; 
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
