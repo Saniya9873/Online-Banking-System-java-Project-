@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="signup.css" />
-  </head>
-  <body>
-    <section class="container">
-      <header>Registration Form</header>
-      <form action="#" class="form">
-    
-        <div class="input-box">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+  <section class="container mt-5">
+    <div class="card p-4">
+      <header class="text-center mb-4"><h2>Registration Form</h2></header>
+      <form class="form needs-validation" novalidate>
+        <div class="form-group">
           <label>Full Name</label>
-          <input type="text" placeholder="Enter full name" required />
+          <input type="text" class="form-control" placeholder="Enter full name" required />
         </div>
-<!--------------------------------------------------------------------------------->
-        <div class="input-box">
+        <div class="form-group">
           <label>Father Name</label>
-          <input type="text" placeholder="Enter name" required />
+          <input type="text" class="form-control" placeholder="Enter name" required />
         </div>
-<!----------------------------------------------------------------------------------->
-        <div class="column">
-          <div class="input-box">
+        <div class="form-row">
+          <div class="form-group col-md-6">
             <label>Phone Number</label>
-            <input type="number" placeholder="Enter phone number" required />
+            <input type="number" class="form-control" placeholder="Enter phone number" required />
           </div>
-          <div class="input-box">
+          <div class="form-group col-md-6">
             <label>Birth Date</label>
-            <input type="date" placeholder="Enter birth date" required />
+            <input type="date" class="form-control" required />
           </div>
         </div>
-<!----------------------------------------------------------------------------------->
-        <div class="gender-box">
-          <h3>Gender</h3>
-          <div class="gender-option">
-            <div class="gender">
-              <input type="radio" id="check-male" name="gender" checked />
-              <label for="check-male">male</label>
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="d-flex">
+            <div class="form-check mr-3">
+              <input type="radio" class="form-check-input" name="gender" id="check-male" checked />
+              <label class="form-check-label" for="check-male">Male</label>
             </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">Female</label>
+            <div class="form-check mr-3">
+              <input type="radio" class="form-check-input" name="gender" id="check-female" />
+              <label class="form-check-label" for="check-female">Female</label>
             </div>
-            <div class="gender">
-              <input type="radio" id="check-other" name="gender" />
-              <label for="check-other">Other</label>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="gender" id="check-other" />
+              <label class="form-check-label" for="check-other">Other</label>
             </div>
           </div>
         </div>
-<!---------------------------------------------------------------------------------->
-        <div class="input-box address">
+        <div class="form-group">
           <label>Address</label>
-          <input type="text" placeholder="Enter street address" required />
-          <div class="column">
-            <input type="text" placeholder="Enter your region" required />
-            <input type="number" placeholder="Enter code" required />
+          <input type="text" class="form-control" placeholder="Enter street address" required />
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" placeholder="Enter your region" required />
+          </div>
+          <div class="form-group col-md-6">
+            <input type="number" class="form-control" placeholder="Enter code" required />
           </div>
         </div>
-<!----------------------------------------------------------------------------------->
-        <button>NEXT -></button>
-<!----------------------------------------------------------------------------------->
+        <button type="submit" class="btn btn-primary btn-block">NEXT →</button>
       </form>
-    </section>
-  </body>
+    </div>
+  </section>
+  <script src="signup.js"></script>
+</body>
 </html>
