@@ -1,0 +1,139 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1d1d2;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #02266e; 
+    color: white; 
+    text-align: center; 
+}
+header .bank-logo {
+    width: 70px;   
+    height: auto;  
+    margin-right: 110vh;  
+    border-radius: 5px; 
+}
+header h1 {
+    font-size: 2rem;
+    margin-left: 20vh; 
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0546c9;
+    padding: 0.5em 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.content {
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.content-image {
+    width: 100%;       
+    height: auto;       
+    margin-top: 20px;   
+    border-radius: 10px; 
+}
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input,
+form select {
+    width: 80%;
+    padding: 0.7em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #0044cc;
+    color: white;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #003399;
+}
+.forgot-password {
+    text-decoration: none;
+    color: #007BFF;  
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #02266e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer address h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+footer address p {
+    font-size: 1rem;
+}
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.social-icons a {
+    display: inline-block;
+    text-decoration: none; 
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease; 
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); 
+}
+

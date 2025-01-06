@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Bank - sub-home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('bank2.jpg'); 
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body> 
+    <header class="text-center py-3 bg-dark text-white"> 
+        <img src="image.png" alt="ABC Bank Logo" class="bank-logo mb-3">
+        <h1>Welcome to ABC Bank</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="sub-home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="transaction-list.jsp">Transaction-list</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer-details.jsp">Customer Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#applyModal">Apply</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container my-5">
+        <div class="col-md-6">
+            <img src="bank2.jpg" alt="Banking" class="img-fluid rounded shadow">
+        </div>
+    </section>
+
+    <!-- Apply Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="applyModalLabel">Apply for Services</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please select the service you want to apply for:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="apply-card.html" class="btn btn-link">Apply for Debit Card</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="apply-insurance.html" class="btn btn-link">Apply for Insurance</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="apply-loan.html" class="btn btn-link">Apply for Loan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row justify-content-center"> 
+                <div class="col-md-6 text-center"> 
+                    <address>
+                        <h2>About Us</h2>
+                        <p>D-a37/a1, Sector 50 Road, Block B, Sector 50, Noida, Uttar Pradesh 201304, Contact number: 0120 034 0108</p>
+                    </address>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook" class="mx-2"></a>
+                        <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/?size=100&id=zXhRTdxWEKE5&format=png&color=000000" alt="Twitter" class="mx-2"></a>
+                        <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram" class="mx-2"></a>
+                        <a href="https://linkedin.com" target="_blank"><img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="LinkedIn" class="mx-2"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

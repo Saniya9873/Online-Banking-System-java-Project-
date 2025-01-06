@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Bank - Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="text-center py-3 bg-dark text-white"> 
+        <img src="image.png" alt="ABC Bank Logo" class="bank-logo mb-3">
+        <h1>Welcome to ABC Bank</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-5">
+                <h2><br>Your Security <br> Our Responsibility</h2>
+                <p><br><br>We offer a wide range of banking solutions to meet your financial needs.<br> Join us today and experience world-class banking services.</p>
+            </div>
+            <div class="col-md-7">
+                <img src="bank.jpg" alt="Banking" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row justify-content-center"> 
+                <div class="col-md-6 text-center"> 
+                    <address>
+                        <h2>About Us</h2>
+                        <p>D-a37/a1, Sector 50 Road, Block B, Sector 50, Noida, Uttar Pradesh 201304, Contact number: 0120 034 0108</p>
+                    </address>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook" class="mx-2"></a>
+                        <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/?size=100&id=zXhRTdxWEKE5&format=png&color=000000" alt="Twitter" class="mx-2"></a>
+                        <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram" class="mx-2"></a>
+                        <a href="https://linkedin.com" target="_blank"><img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="LinkedIn" class="mx-2"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        window.onload = function() {
+            const welcomeMessage = document.getElementById('welcome-message');
+            welcomeMessage.textContent = 'Welcome to ABC Bank - Your trusted financial partner!';
+        };
+        const socialLinks = document.querySelectorAll('.social-icons a');
+        socialLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); 
+                alert(`You are about to visit ${link.href}`);
+
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Insurance - ABC Bank</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            margin-top: 50px;
+        }
+        .card {
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center py-5 bg-dark text-white">
+        <h1>ABC Bank</h1>
+    </header>
+    <div class="container form-container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <h2 class="text-center">Apply for Insurance</h2>
+                    <form action="submit-insurance-application.php" method="POST">
+                        <div class="form-group">
+                            <label for="insuranceType">Type of Insurance</label>
+                            <select class="form-control" id="insuranceType" name="insuranceType" required>
+                                <option value="" disabled selected>Select Insurance Type</option>
+                                <option value="health">Health Insurance</option>
+                                <option value="life">Life Insurance</option>
+                                <option value="car">Car Insurance</option>
+                                <option value="home">Home Insurance</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="accountNumber">Account Number</label>
+                            <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter your account number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea class="form-control" id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 ABC Bank. All Rights Reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
