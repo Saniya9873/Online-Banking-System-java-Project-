@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Bank - Set PIN</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validateAndSavePin(event) {
+            event.preventDefault();
+            const accountNumber = document.getElementById("account-number").value.trim();
+            const pin = document.getElementById("pin").value.trim();
+            const confirmPin = document.getElementById("confirm-pin").value.trim();
+
+            if (!accountNumber || accountNumber.length !== 12 || isNaN(accountNumber)) {
+                alert("Please enter a valid 12-digit account number.");
+                return false;
+            }
+
+            if (pin.length !== 4 || isNaN(pin)) {
+                alert("PIN must be a 4-digit number.");
+                return false;
+            }
+
+            if (pin !== confirmPin) {
+                alert("PIN and Confirm PIN do not match.");
+                return false;
+            }
+            alert("PIN set successfully!");
+        }
+    </script>
+</head>
+<body style="background-color: white;">
+    <header class="text-center py-5 bg-dark text-white">
+        <h1>ABC Bank - Set PIN</h1>
+    </header>
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form onsubmit="validateAndSavePin(event)" class="p-4 border rounded shadow bg-white">
+                    <h2 class="text-center mb-4">Set Your PIN</h2>
+                    <div class="form-group">
+                        <label for="account-number">Account Number:</label>
+                        <input type="text" id="account-number" class="form-control" placeholder="Enter your account number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pin">PIN:</label>
+                        <input type="password" id="pin" class="form-control" placeholder="Enter a 4-digit PIN" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-pin">Confirm PIN:</label>
+                        <input type="password" id="confirm-pin" class="form-control" placeholder="Confirm your 4-digit PIN" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Save PIN</button>
+                    <a href="index.html" class="btn btn-secondary btn-block mt-3">Back</a> <!-- Back Button -->
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-3 text-center">
+        <p>&copy; 2024 ABC Bank. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
